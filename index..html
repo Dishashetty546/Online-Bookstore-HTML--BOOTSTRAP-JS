@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Online Book Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel/Slider for Featured Books -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Featured Book 1 -->
+            <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/6IQqFidBXHk/maxresdefault.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>JavaScript</h5>
+                    <p>This is a book for JavaScript beginners. Please download the PDF and gain knowledge about JavaScript.</p>
+                    <a href="https://drive.google.com/file/d/1YOuhfAak-Z3Ra_NBX9_AMhFShuQsMMpI/view?usp=sharing"
+                        download target="_blank" class="btn btn-info" data-toggle="tooltip" data-bs-placement="right"
+                        title="Download Book">Download Book</a>
+                </div>
+            </div>
+            <!-- Featured Book 2 -->
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/1f/ec/3e/1fec3ee0665075852c4665a01259682d.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>C Programming</h5>
+                    <p>Advanced C Programming course in a PDF file. Download this file and become a hero in C Programming.</p>
+                    <a href="https://drive.google.com/file/d/1_NA-zRm6BXcI8Q45UJmQ0o1NGBQkFQF8/view?usp=sharing"
+                        download target="_blank" class="btn btn-info" data-toggle="tooltip" data-bs-placement="right"
+                        title="Download Book">Download Book</a>
+                </div>
+            </div>
+            <!-- Featured Book 3 -->
+            <div class="carousel-item">
+                <img src="https://www.vtc.com/files/images/courses/33797.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>C++ Course</h5>
+                    <p>Advanced C++ course in simple English. Download the PDF and gain knowledge in C++.</p>
+                    <a href="https://drive.google.com/file/d/11W13yROf4_qr7N0P9HbBeB-SKTdeQs6W/view?usp=sharing"
+                        download target="_blank" class="btn btn-info" data-toggle="tooltip" data-bs-placement="right"
+                        title="Download Book">Download Book</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Search bar and book listings -->
+    <div class="container">
+        <h2>Books</h2>
+        <form class="row g-3">
+            <div class="col-auto">
+                <input type="text" class="form-control" id="searchBar" placeholder="Search...">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Search</button>
+            </div>
+        </form>
+        <div class="row">
+            <!-- Book 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.86saHbx18iltkDCl1G6OSgHaLJ&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more book listings here -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.8TD_d_dRAQZ9nMWBjjB8pwHaLe&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.CRm6N-9wF4eU_NZI0zb56wHaMQ&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.TG5MU3axB-oySw2IrNYWWgHaLZ&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.xr7dOigbSI96CPOMwpMbLwHaKM&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.Ekb-9LilnQGzGiRWa_SVDgAAAA&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.rs-r7FLVuAEI6DoONgZO0AHaMK&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.rs-r7FLVuAEI6DoONgZO0AHaMK&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.-BCwa3l3ypgqeCfle1u85gHaLA&pid=Api&P=0&h=180" class="bd-placeholder-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Name</h5>
+                        <p class="card-text">Author: Author Name</p>
+                        <p class="card-text">Price: $XX.XX</p>
+                        <p class="card-text">Year of Publication: YYYY</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIqUio3N5MC0L3iFkOK7swLZZ1HEtxs6XVRPRVLcAd+H7C0V+z5" crossorigin="anonymous"></script>
+</body>
+
+</html>
